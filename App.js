@@ -25,10 +25,12 @@ const Stack = createNativeStackNavigator();
 export default function App({}) {
   useEffect(() => {
     SplashScreen.hide(); //hides the splash screen on app load.
+    
   }, []);
+ 
   useEffect(() => {
     const backAction = () => {
-      Alert.alert("Are you sure you want to go exit ?", [
+      Alert.alert("Exit App!", "Are you sure you want to quit?", [
         {
           text: "Cancel",
           onPress: () => null,

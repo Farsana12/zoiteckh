@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
     fontFamily:fontFamily.OBJ_BOLD,
   },
   subText:{alignSelf: 'center', color:appColors.BLACK, fontSize: fontSize.SUB_HEAD_15},
+  subText2:{alignSelf: 'center', color:appColors.BORDER_GRAY, fontSize: fontSize.NORMAL_13},
 login:{
     alignSelf: 'flex-start',
     marginStart: 20,
