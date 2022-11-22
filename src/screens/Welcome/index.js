@@ -8,7 +8,9 @@ import {appColors} from '../../Theme/colors';
 export default function Welcome({navigation}) {
   return (
     <View style={styles._main}>
-      <ScrollView>
+      <ScrollView
+        keyboardShouldPersistTaps={'handled'}
+        showsVerticalScrollIndicator={false}>
         <Header
           labelCenter="Welcome User!"
           goBack={() => navigation.goBack()}
@@ -16,7 +18,7 @@ export default function Welcome({navigation}) {
         />
         <Spacer height={50} />
         <Image source={welcome} style={styles.img} />
-        <Spacer height={10} />
+        <Spacer height={20} />
         <Text style={styles.welcome}>{'Welcome to Cloud!!'}</Text>
         <Spacer height={250} />
         <TouchableOpacity

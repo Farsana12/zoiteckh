@@ -6,7 +6,7 @@ export const HeaderProperties = {
   textColor: 'white',
   text_center: {
     color: 'white',
-    fontFamily: fontFamily.OBJ_BOLD_BOLD,
+    fontFamily: fontFamily.OBJ_BOLD,
     fontSize: 29,
   },
   height: 100,

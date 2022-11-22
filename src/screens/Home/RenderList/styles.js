@@ -1,4 +1,6 @@
 import { StyleSheet } from 'react-native';
+import { appColors } from '../../../Theme/colors';
+import { fontFamily } from '../../../Theme/fontFamily';
 
 const styles = StyleSheet.create({
   _main: {
@@ -42,18 +44,20 @@ const styles = StyleSheet.create({
   _subView2: {
     flexDirection: 'column',
    marginStart:20,
+   top:10,
     // flex: 1,
     // backgroundColor: "blue",
     justifyContent:'center',
     alignContent:'center',
     //alignItems: 'center',
   },
-  _item_name: { fontFamily:'bold', color:'black', //flex: 1 
+  _item_name: { fontFamily:fontFamily.OBJ_REGULAR, color:'black',fontSize: 15, //flex: 1 
 },
   _category: {
     //fontFamily: fontFamily.Regular,
-    color: 'gray',
+    color: appColors.GRAY_SUBTEXT,
     fontSize: 15,
+    fontFamily:fontFamily.OBJ_REGULAR
   },
  
   _currentRate: {

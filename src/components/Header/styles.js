@@ -22,9 +22,15 @@ const styles = StyleSheet.create({
   },
   _mode2headerIcon2: {
     position: 'absolute',
-    alignSelf: 'flex-start',
-    ...HeaderProperties.backArrow,
-    left:350  },
+    alignSelf:'flex-end',
+    color: 'white',
+    fontSize: 24,
+    padding: 4,
+    paddingHorizontal: 9,
+    right:15
+  //  ...HeaderProperties.backArrow,
+   // left:350
+   },
   /* ........................ */
 });
 

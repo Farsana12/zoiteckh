@@ -61,6 +61,10 @@
 		<string>NunitoSans-Bold.ttf</string>
 		<string>NunitoSans-Regular.ttf</string>
 		<string>NunitoSans-SemiBold.ttf</string>
+		<string>Montserrat-Bold.ttf</string>
+		<string>Montserrat-Regular.ttf</string>
+		<string>Montserrat-ExtraBold.ttf</string>
+		<string>Montserrat-Medium.ttf</string>
 	</array>
 </dict>
 </plist>

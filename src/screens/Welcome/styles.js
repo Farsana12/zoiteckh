@@ -11,8 +11,9 @@ const styles = StyleSheet.create({
 welcome:{
     alignSelf: 'center',
     color: appColors.SKY_BLUE,
-    fontSize: 23,
-    fontWeight: 'bold',
+    fontSize: 20,
+    //fontWeight: 'bold',
+    fontFamily:fontFamily.OBJ_REGULAR
   },
   btn:{
     backgroundColor: '#10aafe',
@@ -27,9 +28,10 @@ welcome:{
   bottomTxt:{
     alignSelf: 'center',
     //  marginStart: 20,
-    color: 'gray',
+    color: appColors.BORDER_GRAY,
     fontSize: 18,
-    fontWeight: 'bold',
+    fontFamily:fontFamily.OBJ_REGULAR
+   // fontWeight: 'bold',
   }
 });
 export default styles;

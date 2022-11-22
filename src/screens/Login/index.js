@@ -42,7 +42,8 @@ export default function Login({navigation}) {
   };
   const handlePassword = text => {
     const password_regex =
-    /^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(19|20)\d{2}$/ ;
+ //  /^([a-zA-Z0-9]{8,16})$/
+ /^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{8,16}$/
     setPassword(text);
     if (password_regex.test(text) ) {
      
@@ -53,22 +54,17 @@ export default function Login({navigation}) {
     }
   };
 
-  const checkAge = (text) =>{
- if (today - new Date(setPassword(text))){
-  console.warn('success');
- }
- else{
-  console.warn('failes')
- }
   
 
-}
   const handleSubmit = () => {
    navigation.navigate('Welcome');}  
   
   return (
     <View style={styles._main}>
-      <ScrollView>
+      <ScrollView
+        keyboardShouldPersistTaps={'handled'}
+        showsVerticalScrollIndicator={false}
+      >
         <Spacer height={50} />
         <Image source={image_bg} style={styles.img} />
         <Spacer height={20} />
@@ -85,6 +81,7 @@ export default function Login({navigation}) {
           placeholder="Email/Phone"
           keyboardType="email-address"
           value={email}
+          returnKeyType={'next'}
           onChangeText={handleCheckEmail}
           placeholderTextColor={appColors.GRAY_SUBTEXT}
         />
@@ -97,13 +94,15 @@ export default function Login({navigation}) {
         <Text style={styles.input_head}>{'Password'}</Text>
         <TextInput
           style={styles.txt_input}
-          placeholder="MM/DD/YYYY"
+          placeholder="Password"
+          keyboardType='alpha-numeric'
+          returnKeyType='done'
           placeholderTextColor={appColors.GRAY_SUBTEXT}
           onChangeText={handlePassword}
           value={password}
         />
         {checkValidPassword ? (
-          <Text style={styles.error}>{'Password must be your DOB'}</Text>
+          <Text style={styles.error}>{'Password must be alphanumeric with atleast one number,one letter & should be with characters between 8 to 16'}</Text>
         ) : (
           <Text style={styles.error}>{''}</Text>
         )}

@@ -16,7 +16,9 @@ export default function Home({navigation}) {
     const [list , setList] = useState(false);
   return (
     <View style={{flex: 1}}>
-      <ScrollView>
+      <ScrollView
+        keyboardShouldPersistTaps={'handled'}
+        showsVerticalScrollIndicator={false}>
         <Header
           labelCenter="View Files"
           goBack={() => navigation.goBack()}

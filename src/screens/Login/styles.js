@@ -13,23 +13,25 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     color: appColors.SKY_BLUE,
     fontSize: fontSize.HEAD_24,
-    fontFamily:fontFamily.OBJ_BOLD,
+    fontFamily:fontFamily.OBJ_REGULAR,
   },
-  subText:{alignSelf: 'center', color:appColors.BLACK, fontSize: fontSize.SUB_HEAD_15},
-  subText2:{alignSelf: 'center', color:appColors.BORDER_GRAY, fontSize: fontSize.NORMAL_13},
+  subText:{alignSelf: 'center', color:appColors.BLACK, fontSize: fontSize.SUB_HEAD_15,fontFamily:fontFamily.OBJ_REGULAR},
+  subText2:{alignSelf: 'center', color:appColors.BORDER_GRAY, fontSize: fontSize.NORMAL_13,fontFamily:fontFamily.OBJ_REGULAR},
 login:{
     alignSelf: 'flex-start',
     marginStart: 20,
     color: '#10aafe',
     fontSize: 22,
-    fontWeight: 'bold',
+    fontFamily:fontFamily.OBJ_REGULAR,
+    //fontWeight: 'bold',
   },
   input_head:{
     alignSelf: 'flex-start',
     marginStart: 20,
     color: '#10aafe',
     fontSize: 15,
-    fontWeight: 'bold',
+   // fontWeight: 'bold',
+    fontFamily:fontFamily.OBJ_REGULAR
   },
   txt_input:{
     height: 40,
@@ -65,7 +67,8 @@ login:{
     alignSelf: 'center',
   },
   btntxt:{
-    color: 'white', fontSize: 20
+    color: 'white', fontSize: 20,
+    fontFamily:fontFamily.OBJ_REGULAR
 
   }
 
